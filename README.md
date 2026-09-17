@@ -7,4 +7,12 @@ Kevin David Aristizabal Giraldo
 
 ## DOCENTE:
 
+Walter Hugo Arboleda Mazo
+
+## REPOSITORIO:
+
+- *ENTREGAS*: PDFs entregables
+- *ACTIVIDADES*: Las soluciones de las actividades
+
+
 
