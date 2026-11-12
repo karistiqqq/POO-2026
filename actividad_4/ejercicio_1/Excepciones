@@ -1,7 +1,4 @@
-**
- * Clase que provoca distintas excepciones en puntos concretos del programa.
- * Los mensajes impresos permiten saber qué bloques de código se ejecutaron.
- */
+```java
 public class PracticaExcepciones {
 
     public static void main(String[] argumentos) {
@@ -35,3 +32,4 @@ public class PracticaExcepciones {
         }
     }
 }
+```
