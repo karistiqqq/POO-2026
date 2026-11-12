@@ -1,0 +1,37 @@
+**
+ * Clase que provoca distintas excepciones en puntos concretos del programa.
+ * Los mensajes impresos permiten saber qué bloques de código se ejecutaron.
+ */
+public class PracticaExcepciones {
+
+    public static void main(String[] argumentos) {
+
+        // Primer bloque try: división entera por cero
+        try {
+            System.out.println("Ingresando al primer try");
+            double resultadoDivision = 10000 / 0; // Lanza ArithmeticException
+            System.out.println("Después de la división"); // Nunca se ejecuta
+        } catch (ArithmeticException ex) {
+            System.out.println("División por cero");
+        } finally {
+            // Se ejecuta siempre, haya o no excepción
+            System.out.println("Ingresando al primer finally");
+        }
+
+        // Segundo bloque try: uso de una referencia nula
+        try {
+            System.out.println("Ingresando al segundo try");
+            Object elemento = null;
+            elemento.toString(); // Lanza NullPointerException
+            System.out.println("Imprimiendo objeto"); // Nunca se ejecuta
+        } catch (ArithmeticException ex) {
+            // La excepción lanzada no es de este tipo
+            System.out.println("División por cero");
+        } catch (Exception ex) {
+            // Aquí se captura la NullPointerException
+            System.out.println("Ocurrió una excepción");
+        } finally {
+            System.out.println("Ingresando al segundo finally");
+        }
+    }
+}
