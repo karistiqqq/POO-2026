@@ -1,4 +1,4 @@
-```java
+
 public class PracticaExcepciones {
 
     public static void main(String[] argumentos) {
@@ -32,4 +32,4 @@ public class PracticaExcepciones {
         }
     }
 }
-```
+
